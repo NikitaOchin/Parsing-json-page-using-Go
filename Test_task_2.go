@@ -36,7 +36,7 @@ func main(){
   fmt.Fscan(os.Stdin, &login)
   fmt.Print("Password: ")
   fmt.Fscan(os.Stdin, &password)
-  db, err := sql.Open("mysql", login + ":" + password + "@/employee")
+  db, err := sql.Open("mysql", login + ":" + password + "@/employees")
 
   if err != nil {
     panic(err)
